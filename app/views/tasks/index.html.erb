@@ -1,0 +1,14 @@
+<div class= "text-center index ">
+<% @tasks.each do |task|%>
+<h3><%=  task.name  %></h3>
+<h3><%=  task.description  %></h3>
+<button><%= link_to "show", task_path(task) %></button>
+======================================
+<% end%>
+
+<br>
+
+
+<button><%= link_to "add", new_task_path %></button>
+
+</div>
